@@ -18,10 +18,10 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 
 function validateInput(testInput) {
     let noNumber = [];
-    if (isNaN(string) === true) {
-        noNumber.push('Not a Number')
-       } else if (isNaN(string) === false) {
+    if (isNaN(0) === false) {
         noNumber.push('Is a number')
+       } else if (isNaN('') === true) {
+        noNumber.push('Not a number')
        } else return noNumber.push('Empty');
 }
 
