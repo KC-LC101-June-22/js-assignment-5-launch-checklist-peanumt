@@ -16,7 +16,7 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
    */
 }
 
-function validateInput(testInput) {
+function validateInput(string) {
     let pilotMain =document.getElementById("pilotName");
     let coPilot = document.getElementById("coPilotName");
     let fuelLevel = document.getElementById("fuelLevel");
