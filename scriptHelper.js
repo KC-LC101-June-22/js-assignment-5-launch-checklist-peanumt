@@ -23,6 +23,18 @@ function validateInput(string) {
     let cargoMass = document.getElementById("cargoMass");
     let allIds = [pilotMain,coPilot,fuelLevel,cargoMass];
     if (pilotMain || coPilot !== String()) {
+        window.addEventListener("load", function() {
+            let form = document.querySelector("form");
+            form.addEventListener("submit", function(event) {
+               let usernameInput = document.querySelector("input[name=pilotMain,name=coPilot]");
+               if (usernameInput.value === "") {
+                  alert("All fields are required!");
+                  // stop the form submission
+                  event.preventDefault();
+               }
+            });
+         });
+        })
         console.log("Is a Number");}
         else if (fuelLevel || cargoMass === isNaN(word)) {
             console.log("Not a number");
