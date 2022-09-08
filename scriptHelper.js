@@ -27,19 +27,19 @@ function validateInput(string) {
             let form = document.querySelector("form");
             form.addEventListener("submit", function(event) {
                let usernameInput = document.querySelector("input[name=pilotMain,name=coPilot]");
-               if (usernameInput.value === "") {
-                  alert("All fields are required!");
+               if (isNaN() === true) {
+                  alert("Not a ");
                   // stop the form submission
                   event.preventDefault();
                }
             });
          });
-        })
+        }
         console.log("Is a Number");}
-        else if (fuelLevel || cargoMass === isNaN(word)) {
-            console.log("Not a number");
-        } else if (allIds === "" ) return console.log("Empty")
-    }
+    //    else if (fuelLevel || cargoMass === isNaN(word)) {
+    //         console.log("Not a number");
+    //     } else if (allIds === "" ) return console.log("Empty")
+    // }
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
    
